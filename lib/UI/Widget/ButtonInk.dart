@@ -9,25 +9,17 @@ class ButtonInk extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       child: Container(
-        decoration: BoxDecoration(
-          color: Colors.cyan,
-          borderRadius: BorderRadius.circular(25.0),
-        ),
-
-        /* onTap: (){
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context)=> this.routeLink),
-        );
-      },*/
-
-        margin: EdgeInsets.only(top: sizes),
-        constraints: BoxConstraints.expand(height: 35, width: 75),
-        child: Center(
-          child: Text(inkText,
-              style: TextStyle(fontSize: 15, color: Colors.black)),
-        ),
-      ),
+             margin: EdgeInsets.only(top: 20.0),
+            child: Center(
+              child: MaterialButton(
+                minWidth: 100.0,
+                height: 50.0,
+                onPressed: (){},//conexion base de datos
+                color: Colors.blueAccent,
+                child: Text(inkText,style: TextStyle(fontSize: sizes,color: Colors.white),),              
+              ),
+            ),
+          ),
     );
   }
 }

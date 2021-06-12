@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/UI/Widget/ImgSocial.dart';
+import 'package:flutter_application_1/UI/Widget/ButtonInk.dart';
+import 'package:flutter_application_1/UI/Widget/Footer.dart';
 import 'package:flutter_application_1/UI/Widget/TextInput.dart';
 
 class Profile extends StatelessWidget{
@@ -30,35 +31,31 @@ class Profile extends StatelessWidget{
             ),//foto
          
           Container(
-            margin: EdgeInsets.only(top: 15.0),
+            height: 20,
+            width: 20,
+            margin: EdgeInsets.only(top: 15.0,left: 25, right: 30),
             child: TextOri("Email Address", 15),
           ),//Email
           Container(
-            margin: EdgeInsets.only(top: 15.0),
+            height: 20,
+            width: 20,
+            margin: EdgeInsets.only(top: 15.0,left: 25, right: 30),
             child: TextOri('User Name',15),
           ),//name
           Container(
-            margin: EdgeInsets.only(top: 15.0),
+            height: 20,
+            width: 20,
+            margin: EdgeInsets.only(top: 15.0,left: 25, right: 30),
             child: TextOri('Password',15),
           ),//password
           Container(
-            margin: EdgeInsets.only(top: 15.0),
+            height: 20,
+            width: 20,
+            margin: EdgeInsets.only(top: 15.0,left: 25, right: 30),
             child: TextOri('Repeat password',15),
           ),
-          Container(
-             margin: EdgeInsets.only(top: 20.0),
-            child: Center(
-              child: MaterialButton(
-                minWidth: 100.0,
-                height: 40.0,
-                onPressed: (){},//conexion base de datos
-                color: Colors.blueAccent,
-                child: Text('Sing up',style: TextStyle(fontSize: 15.0,color: Colors.white),),              
-              ),
-            ),
-          ),
-          ImgSocial("assets/img/facebook.png",15),
-          ImgSocial("assets/img/google.png",15),
+          ButtonInk('Sing in', 15), 
+          Footer(),
           ],
         ),
       )
@@ -66,4 +63,3 @@ class Profile extends StatelessWidget{
   }
   
 } 
-//cake tool buscar 

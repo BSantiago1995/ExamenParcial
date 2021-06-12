@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/UI/Widget/ButtonInk.dart';
-import 'package:flutter_application_1/UI/Widget/ImgSocial.dart';
+import 'package:flutter_application_1/UI/Widget/Footer.dart';
 import 'package:flutter_application_1/UI/Widget/TextInput.dart';
 import 'package:flutter_application_1/UI/Widget/TextOut.dart';
 
@@ -20,6 +20,15 @@ class Login extends StatelessWidget {
               style: TextStyle(color: Colors.black45, fontSize: 25.0),
             ),
           ),
+          Container(
+            height: 40.0,
+            margin: EdgeInsets.only(top: 15.0),
+            child: Text(
+              "Sing In",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.black45, fontSize: 15.0),
+            ),
+          ),
         Container(
               height: 100.0,
               width: 100.0,
@@ -34,32 +43,32 @@ class Login extends StatelessWidget {
               ),
             ),
           Container(
-            width: 250,
-            margin: EdgeInsets.only(top: 15.0),
+            height: 20,
+            width: 20,
+            margin: EdgeInsets.only(top: 15.0, left: 25, right:60),
             child: TextOri('Enter your email address', 15),
           ),
+           Container(
+            height: 20,
+            margin: EdgeInsets.only(top: 15.0,left: 280),
+            child:TextOut('50/50',9)
+          ),
           Container(
-            width: 250,
-            margin: EdgeInsets.only(top: 15.0),
+            height: 20,
+            width: 20,
+            margin: EdgeInsets.only(top: 15.0,left: 25, right: 60),
             child: TextOri('Password', 15),
+          ),
+           Container(
+            height: 20,
+            margin: EdgeInsets.only(top: 15.0,left: 280),
+            child:TextOut('min 10 charters',9)
           ),
           Container(
               margin: EdgeInsets.only(top: 15.0),
               child: TextOut("Forget password", 12)),
-          Container(
-            height: 50,
-            width: 10,
-            margin: EdgeInsets.only(top: 15,left: 20),
-            child: ButtonInk("Log In", 15),
-          ),
-          Container(
-              margin: EdgeInsets.only(top: 15.0),
-              child: TextOut("Login with", 17)),
-          ImgSocial("assets/img/facebook.png", 15),
-          ImgSocial("assets/img/google.png", 15),
-          Container(
-              margin: EdgeInsets.only(top: 15),
-              child: TextOut("Teams of service ", 13)),
+        ButtonInk('Login in', 15),   
+         Footer(),
         ],
       ),
     ));

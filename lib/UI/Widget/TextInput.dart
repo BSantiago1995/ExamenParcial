@@ -7,6 +7,7 @@ class TextOri extends StatelessWidget{
  @override
   Widget build(BuildContext context) {
   return TextField(
+          
           decoration: InputDecoration(
               border: UnderlineInputBorder(borderSide: BorderSide(color: Colors.white)),
               hintText:texto_i,

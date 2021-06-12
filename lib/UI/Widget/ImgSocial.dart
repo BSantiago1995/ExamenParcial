@@ -2,24 +2,26 @@ import 'package:flutter/material.dart';
 
 class ImgSocial extends StatelessWidget{
   String pathImage="assets/img/login.png";
-  double topI=0;
-  ImgSocial(this.pathImage,this.topI);
+
+  ImgSocial(this.pathImage);
  @override
   Widget build(BuildContext context) {
-  return Container(
-        height: 10,
-        margin: EdgeInsets.only(top: topI),
+  return 
+  Container(
+    
+        width: 30,
+        height: 30,
+        //margin: EdgeInsets.only(top:movetop,left: moveleft),
         decoration: BoxDecoration(
           image: DecorationImage(
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
             alignment: Alignment.topCenter,
             image: AssetImage(pathImage),
-           
+            
           ),
            borderRadius:BorderRadius.all(Radius.circular(5.0)),
         ),
       );
-  
   }
 
 }
